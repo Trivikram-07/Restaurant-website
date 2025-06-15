@@ -1,0 +1,90 @@
+/* General Styling for the Contact Section */
+.contact-info-section {
+    background-color: #faf8f8; /* Light background */
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .contact-info-header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Container for the information boxes */
+  .contact-info-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Responsive wrapping for smaller screens */
+    gap: 40px;
+  }
+  
+  .contact-info-box {
+    flex: 1;
+    min-width: 250px; /* Adjusting for responsive layout */
+    background-color: #f1eeee;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contact-info-box h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6363;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info-box p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Contact Links Styling */
+  .contact-info-box p strong {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .contact-info-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-info-box {
+      max-width: 600px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .contact-info-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .contact-info-box {
+      padding: 20px;
+    }
+  
+    .contact-info-box h3 {
+      font-size: 1.2rem;
+    }
+  
+    .contact-info-box p {
+      font-size: 1rem;
+    }
+  }
+  

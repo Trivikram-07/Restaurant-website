@@ -1,0 +1,48 @@
+/* General styling for nav-link */
+.nav-link {
+  color: #FF5733; /* Orange color for the links */
+  font-size: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  margin: 15px;
+  
+}
+.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.7); /* White border */
+}
+
+
+.navbar-brand img{
+  height: 180px;
+}
+.navbar-nav {
+  margin-left: auto; }
+
+/* Hover effect for nav-link */
+.nav-link:hover {
+  color: #FFD700; /* Gold color on hover */
+}
+
+/* Ensure that active links stay yellow */
+.nav-link.active {
+  color: #FFD700 !important; /* Force gold color for active links */
+}
+
+/* Transparent background for the navbar */
+.navbar-transparent {
+  background-color: transparent !important;
+  box-shadow: none; /* Remove any box-shadow if present */
+}
+
+/* Responsive styling */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .nav-link {
+    padding: 10px 0;
+  }
+}

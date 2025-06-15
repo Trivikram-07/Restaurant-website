@@ -1,0 +1,104 @@
+.footer {
+    position: relative;
+    background-image: url('C:\Users\sudha\Desktop\react projects\sushma mam project\my-app\src\components\footer background.jpg');  /* Add background image */
+    background-size: cover;
+    background-position: center;
+    color: #f0a500;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .footer-overlay {
+    
+    padding: 30px;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    margin-bottom: 10px;
+    max-width: 200px;  /* Responsive logo size */
+  }
+  
+  .footer-description {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+  
+  .footer-links {
+    margin-top: 30px;
+    font-size: 28px;
+  }
+  
+  .footer-link {
+    color: #f0a500;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media {
+    margin-top: 15px;
+  }
+  
+  .social-icon img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #f0a500;
+    padding-top: 10px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .footer-description {
+      font-size: 14px;
+    }
+    
+    .footer-links {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  
+    .social-icon img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }
+  
+  /* Tablet responsiveness */
+  @media (max-width: 1024px) {
+    .footer-description {
+      font-size: 15px;
+    }
+  
+    .footer-links {
+      margin-top: 18px;
+    }
+  
+    .social-icon img {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .footer-bottom {
+      font-size: 13px;
+    }
+  }
+  

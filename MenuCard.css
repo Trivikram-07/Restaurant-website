@@ -1,0 +1,120 @@
+.menu-card {
+  font-family: 'Poppins', sans-serif; /* More modern font */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Adds depth with shadow */
+
+}
+
+.menu-card h1 {
+  margin: 50px 0;
+  color: #FF5733; /* Darker color for title */
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; /* Makes the text stand out */
+  text-decoration: solid;
+  border-bottom: 5px solid #070707;
+  
+}
+
+.menu-category {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.menu-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.menu-header img.menu-image {
+  width: 60px; /* Larger for emphasis */
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px; /* Space between the image and heading */
+  transition: transform 0.3s ease; /* Subtle hover effect */
+}
+
+.menu-header img.menu-image:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.menu-header h2 {
+  border-bottom: 2px solid #070707;
+  padding-bottom: 5px;
+  color: #0c0c0c; /* More vibrant color */
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.menu-item {
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.6);
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.menu-item h3 {
+  margin: 0;
+  color: #2d3436; /* Darker, more elegant color */
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: color 0.3s ease; /* Transition for color */
+}
+
+.menu-item h3:hover {
+  color: #e74c3c; /* Hover color for titles */
+}
+
+.menu-item p {
+  margin: 5px 0;
+  color: #7f8c8d;
+  font-size: 1.2rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #e67e22; /* More noticeable price color */
+  font-size: 1.6rem;
+  position: absolute;
+  right: 0;
+  top: 80%;
+  transform: translateY(-50%);
+  margin-left: 5px;
+}
+
+.menu-item:hover {
+  background-color: rgba(230, 126, 34, 0.1); /* Light orange highlight */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-category {
+    grid-template-columns: 1fr; /* Stacks the menu for smaller screens */
+  }
+
+  .menu-header img.menu-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu-card h1 {
+    font-size: 3rem;
+  }
+}
